@@ -10,6 +10,9 @@ RUN wget -nv -O ~/miniconda.sh http://repo.continuum.io/miniconda/Miniconda3-4.5
     conda install --yes -c conda-forge numpy pandas && \
     conda install --yes -c conda-forge xlrd
 
+# make sure we have a stashcp in the path
+ln -f -s /cvmfs/oasis.opensciencegrid.org/osg/modules/stashcp/5.1.2/bin/stashcp /usr/bin/stashcp
+
 # build info
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
 
