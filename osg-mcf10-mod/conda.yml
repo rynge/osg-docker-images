@@ -1,0 +1,8 @@
+channels:
+  - conda-forge
+dependencies:
+  - assimulo
+  - numpy
+  - pandas
+  - python=3.6
+  - xlrd
