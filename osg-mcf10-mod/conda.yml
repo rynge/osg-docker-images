@@ -1,8 +1,8 @@
 channels:
   - conda-forge
 dependencies:
-  - assimulo
-  - numpy
+  - assimulo=2.9
+  - numpy=1.15.4
   - pandas
   - python=3.6
   - xlrd
